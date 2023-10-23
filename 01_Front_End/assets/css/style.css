@@ -22,12 +22,24 @@
 .home-content>h1{
     color: #0b5ed7;
     font-size: 50px;
+
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: 1s;
 }
 .home-content>h2{
     font-size: 30px;
+
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1.3s;
 }
 .home-content>h3{
     font-size: 20px;
+
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1.6s;
 }
 #login:hover{
     background-color: white;
@@ -49,12 +61,20 @@
     background: white;
     border: 25px solid #1069ee;
     box-shadow: 15px  15px 15px #0b88ff;
+
+    opacity: 0;
+    animation: zoomOut 1s ease forwards;
+    animation-delay: 1.6s;
 }
 #car1{
     position: absolute;
     right: -86px;
     top: 96px;
     transform: rotate(315deg);
+
+    opacity: 0;
+    animation: car 1s ease forwards;
+    animation-delay: 2s;
 }
 
 .logo{
@@ -62,7 +82,12 @@
     animation: slideRight 1s ease forwards;
 }
 
-
+.btn{
+    opacity: 0;
+    transition: .4s;
+    animation: slideTop 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
 
 
 @keyframes slideRight {
@@ -76,6 +101,18 @@
     }
 }
 
+@keyframes slideLeft {
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+
 @keyframes slideTop {
     0%{
         transform: translateY(100px);
@@ -87,3 +124,35 @@
     }
 }
 
+@keyframes slideBottom {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomOut {
+    0%{
+        transform: scale(1.1);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes car {
+    0%{
+        transform: translate(300px,-300px) scale(0)rotate(-45deg);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0,0) scale(1)rotate(-45deg);
+        opacity: 1;
+    }
+}
