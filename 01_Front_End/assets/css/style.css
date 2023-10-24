@@ -2,6 +2,7 @@
     color: #0b5ed7;
 }
 
+
 .nav-link{
     display: inline-block;
     opacity: 0;
@@ -50,8 +51,8 @@
     position: relative;
     width: 440px;
     height: 440px;
-    bottom: 65px;
     right: 100px;
+    bottom: -8px;
     transform: rotate(45deg);
 }
 .homeImg>.rhombus{
@@ -87,6 +88,12 @@
     transition: .4s;
     animation: slideTop 1s ease forwards;
     animation-delay: calc(.2s * var(--i));
+}
+
+.carSecText{
+    text-align: center;
+    position: relative;
+    top: 270px;
 }
 
 
@@ -156,3 +163,4 @@
         opacity: 1;
     }
 }
+
