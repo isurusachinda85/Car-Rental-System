@@ -101,8 +101,8 @@
 
 .carCardSet{
     width: 80vw;
-    height: 47vh;
-    border: 1px solid;
+    height: 50vh;
+    /*border: 1px solid;*/
     left: 0;
     right: 0;
     margin: auto;
@@ -110,13 +110,12 @@
     top: 313px;
     display: flex;
     justify-content: space-between;
-    align-content: flex-end;
 
 }
 .carImg{
     height: 45%;
     border-radius: 10px;
-      border: 2px solid black;
+    /*border: 2px solid black;*/
 }
 #carSection>.carCardSet:nth-child(2){
     margin-top: 40px;
@@ -132,14 +131,20 @@
 
 .carCard{
     position: relative;
-    width: 22%;
+    width: 25%;
     height: 100%;
-    border: 2px solid red;
+    /*border: 2px solid red;*/
     box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
     0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
     border-radius: 10px;
 }
+.carDetail{
+    height: 55%;
+    display: flex;
+    flex-direction:column;
+    border: 1px solid;
 
+}
 
 @keyframes slideRight {
     0%{
