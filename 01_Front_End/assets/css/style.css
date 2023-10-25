@@ -226,6 +226,8 @@
 .boxArea{
     width: 1000px;
     /*height: 520px;*/
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(5, 107, 255, 0.3);
 }
 .left-box{
     padding: 77px 55px 54px 53px;
