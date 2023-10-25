@@ -222,13 +222,15 @@
 }
 
 /*-----------------------login page---------------------*/
-.container{
-    border: 1px solid;
-}
-.boxArea{
-    width: 1200px;
 
+.boxArea{
+    width: 1000px;
+    /*height: 520px;*/
 }
+.left-box{
+    padding: 77px 55px 54px 53px;
+}
+
 
 @keyframes slideRight {
     0% {
