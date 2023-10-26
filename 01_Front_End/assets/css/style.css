@@ -233,6 +233,15 @@
     padding: 77px 55px 54px 53px;
 }
 
+/*-------------------------customer register------------------*/
+#customerForm{
+    margin-top: 100px;
+}
+.image-context {
+    width: 400px;
+    height: 190px;
+}
+
 
 @keyframes slideRight {
     0% {
