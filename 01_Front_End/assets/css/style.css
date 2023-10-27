@@ -115,7 +115,7 @@
     position: relative;
     top: 313px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .carImg {
@@ -242,7 +242,42 @@
     height: 190px;
 }
 
+/*--------------------------Contact Page-----------------------*/
+.footer{
+    border: 1px solid;
+    width: 100%;
+    height: 700px;
+    margin-top: 500px;
 
+}
+
+.foot {
+    margin: 50px;
+    border: 1px solid;
+    width: 90%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contactForm {
+    height: 100%;
+    width: 40%;
+    /*border: 1px solid red;*/
+}
+.contactDetail {
+    height: 100%;
+    width: 40%;
+    border: 1px solid red;
+}
+#massage{
+    resize: none;
+    height: 150px;
+}
+.text{
+    height: 50px;
+}
 @keyframes slideRight {
     0% {
         transform: translateX(-100px);
