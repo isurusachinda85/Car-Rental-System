@@ -115,8 +115,7 @@
     position: relative;
     top: 313px;
     display: flex;
-    justify-content: space-around;
-
+    justify-content: space-evenly;
 }
 
 .carImg {
@@ -135,9 +134,10 @@
 
 .carTypTex {
     position: absolute;
-    top: -80px;
-    left: 0;
-    font-size: 35px;
+    top: -50px;
+
+
+    font-size: 20px;
 }
 
 .carCard {
