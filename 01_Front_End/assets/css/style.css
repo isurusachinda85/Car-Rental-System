@@ -115,7 +115,7 @@
     position: relative;
     top: 313px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .carImg {
@@ -137,7 +137,7 @@
     top: -50px;
 
 
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .carCard {
@@ -278,6 +278,9 @@
 .text{
     height: 50px;
 }
+
+/*--------------------------------Customer Page---------------------------------*/
+
 @keyframes slideRight {
     0% {
         transform: translateX(-100px);
