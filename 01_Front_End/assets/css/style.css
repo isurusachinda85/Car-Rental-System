@@ -281,6 +281,16 @@
 
 /*--------------------------------Customer Page---------------------------------*/
 
+/*rent car*/
+
+.rentCarSection {
+    position: relative;
+    top: 360px;
+}
+.rentCard{
+    position: relative;
+    top: 400px;
+}
 @keyframes slideRight {
     0% {
         transform: translateX(-100px);
