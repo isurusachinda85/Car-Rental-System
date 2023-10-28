@@ -770,9 +770,44 @@
             <h1 class="text-primary fw-bold text-center">Booking Your Car</h1>
         </div>
     </section>
-    <div class="card rentCard">
+    <div class="card rentCard shadow ">
         <div class="card-body">
-            This is some text within a card body.
+            <div class="row mt-2 mb-2 d-flex justify-content-center">
+                <div class="row justify-content-evenly gap-3">
+                    <div class="col-3">
+                        <label class="form-label" for="rentId">Rent Id</label>
+                        <input type="text" class="form-control" id="rentId" name="rentId"  aria-label="First name">
+                    </div>
+                    <div class="col-3">
+                        <label class="form-label" for="userNic">User NIC</label>
+                        <input type="text" class="form-control" id="userNic" name="userNic"  aria-label="Last name">
+                    </div>
+                    <div class="col-2">
+                        <label class="form-label" for="categoryType">Category</label>
+                        <select class="form-select" id="categoryType" name="categoryType" aria-label="Default select example">
+                            <option selected>Choose Type..</option>
+                            <option value="GENERAL">GENERAL</option>
+                            <option value="LUXURY">LUXURY</option>
+                            <option value="PREMIUM">PREMIUM</option>
+                        </select>
+                    </div>
+                    <div class="col-2">
+                        <label class="form-label" for="fuelType">Fuel Type</label>
+                        <select class="form-select " id="fuelType" name="categoryType" aria-label="Default select example">
+                            <option selected>Choose Type..</option>
+                            <option value="DIESEL">DIESEL</option>
+                            <option value="PETROL">PETROL</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card rentCard shadow  mt-5 justify-content-center">
+        <div class="card-body row justify-content-evenly gap-5 ms-2 ">
+            <div class="col-5" style="height: 400px;border: 1px solid"></div>
+            <div class="col-5" style="height: 400px;border: 1px solid"></div>
         </div>
     </div>
 </main>
