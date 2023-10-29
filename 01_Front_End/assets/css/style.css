@@ -172,44 +172,49 @@
     /*border: 2px solid gold;*/
 }
 
-.carDetail>div:first-child>h1{
+.carDetail > div:first-child > h1 {
     font-size: 18px;
     font-weight: bold;
     transform: translate(10px, 5px);
 }
 
-.dailyPrice{
+.dailyPrice {
     transform: translate(10px, 4px);
     font-size: 16px;
     font-weight: bold;
     color: #e74c0f;
 }
-.monthlyPrice{
+
+.monthlyPrice {
     transform: translate(10px, -2px);
     font-size: 13px;
     font-weight: 500;
     color: #017bd9;
 }
 
-.typeCon{
+.typeCon {
     display: flex;
     justify-content: space-between;
     column-gap: 35px;
     margin-left: 22px;
 }
-.typeCon>div:first-child{
+
+.typeCon > div:first-child {
     width: 20%;
     /*border: 1px solid;*/
 }
-.typeCon>div:nth-child(2){
+
+.typeCon > div:nth-child(2) {
     width: 20%;
     /*border: 1px solid;*/
 }
-.typeCon>div:nth-child(3){
+
+.typeCon > div:nth-child(3) {
     width: 20%;
     /*border: 1px solid;*/
 }
-.rentNow{
+
+.rentNow {
     position: absolute;
     margin: auto;
     left: 0;
@@ -217,33 +222,36 @@
     width: 218px;
     transform: translate(10px, 3px);
 }
-.typeCon>div>h1{
+
+.typeCon > div > h1 {
     font-size: 8px;
 }
 
 /*-----------------------login page---------------------*/
 
-.boxArea{
+.boxArea {
     width: 1000px;
     /*height: 520px;*/
     box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
     0.3em 0.3em 1em rgba(5, 107, 255, 0.3);
 }
-.left-box{
+
+.left-box {
     padding: 77px 55px 54px 53px;
 }
 
 /*-------------------------customer register------------------*/
-#customerForm{
+#customerForm {
     margin-top: 100px;
 }
+
 .image-context {
     width: 400px;
     height: 190px;
 }
 
 /*--------------------------Contact Page-----------------------*/
-.footer{
+.footer {
     /*border: 1px solid;*/
     width: 100%;
     height: 700px;
@@ -266,52 +274,89 @@
     width: 40%;
     /*border: 1px solid red;*/
 }
+
 .contactDetail {
     height: 100%;
     width: 40%;
     /*border: 1px solid red;*/
 }
-#massage{
+
+#massage {
     resize: none;
     height: 150px;
 }
-.text{
+
+.text {
     height: 50px;
 }
 
 /*--------------------------------Customer Page---------------------------------*/
 
+/*Browse Car*/
+
+.carCardSet1 {
+    width: 80vw;
+    height: 50vh;
+    /*border: 1px solid;*/
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: relative;
+    top: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#carSection1 > .carSec > .carCardSet1:nth-child(3), .carCardSet1:nth-child(4) {
+    margin-top: 150px;
+    /*border: 1px solid;*/
+}
+
+.carTypTex {
+    position: absolute;
+    top: -50px;
+
+    font-size: 25px;
+}
+
 /*rent car*/
 
 .rentCarSection {
     position: relative;
-    top: 360px;
+    top: 390px;
 }
-.rentCard{
-    position: relative;
-    top: 400px;
-}
-#addCart:hover{
+
+#addCart:hover {
     color: white;
 }
-#res:hover{
+
+#res:hover {
     background: white;
     color: #0b5ed7;
 }
+
 /*booking detail*/
 
-.bookingDetail {
+.bookingDetailSection {
     position: relative;
     top: 480px;
 }
-.bookingCard{
+
+.bookingCard {
     position: relative;
-    top: 495px;
+    top: 60px;
 }
+
 /*Payment detail*/
-.paymentDetail {
+.paymentDetailSection {
     position: relative;
-    top: 550px;
+    top: 580px;
+}
+
+.paymentCard {
+    position: relative;
+    top: 60px;
 }
 
 @keyframes slideRight {
