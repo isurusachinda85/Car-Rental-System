@@ -302,9 +302,14 @@
     right: 0;
     margin: auto;
     position: relative;
-    top: 350px;
+    top: 150px;
     display: flex;
     justify-content: space-between;
+}
+
+.carSecText1{
+    position: relative;
+    top: 100px;
 }
 
 
@@ -324,7 +329,7 @@
 
 .rentCarSection {
     position: relative;
-    top: 390px;
+    top: 80px;
 }
 
 #addCart:hover {
@@ -340,7 +345,7 @@
 
 .bookingDetailSection {
     position: relative;
-    top: 480px;
+    top: 100px;
 }
 
 .bookingCard {
@@ -351,7 +356,7 @@
 /*Payment detail*/
 .paymentDetailSection {
     position: relative;
-    top: 580px;
+    top: 100px;
 }
 
 .paymentCard {

@@ -11,18 +11,18 @@ function saveLastView(clickedID) {
         case "homeForm":
             localStorage.setItem("view", "HOME");
             break;
-        case "customerForm":
-            localStorage.setItem("view", "CUSTOMER");
+        case "browseCarForm":
+            localStorage.setItem("view", "BROWSECAR");
             break;
-        case "itemForm":
-            localStorage.setItem("view", "ITEM");
+        case "rentCarForm":
+            localStorage.setItem("view", "RENTCAR");
             break;
-        case "placeOrderForm":
-            localStorage.setItem("view", "ORDER");
+        case "bookingDetailsForm":
+            localStorage.setItem("view", "BOKKINGDETAIL");
             break;
 
-        case "orderDetailForm":
-            localStorage.setItem("view", "ORDERDETAIL");
+        case "yourPaymentDetailForm":
+            localStorage.setItem("view", "PAYMENTDETAIL");
             break;
     }
 }
@@ -33,17 +33,17 @@ function setTheLastView() {
         case "HOME":
             setView($("#homeForm"));
             break;
-        case "ITEM":
-            setView($("#itemForm"));
+        case "BROWSECAR":
+            setView($("#browseCarForm"));
             break;
-        case "CUSTOMER":
-            setView($("#customerForm"));
+        case "RENTCAR":
+            setView($("#rentCarForm"));
             break;
-        case "ORDER":
-            setView($("#placeOrderForm"));
+        case "BOKKINGDETAIL":
+            setView($("#bookingDetailsForm"));
             break;
-        case "ORDERDETAIL":
-            setView($("#orderDetailForm"));
+        case "PAYMENTDETAIL":
+            setView($("#yourPaymentDetailForm"));
             break;
         default:
             setView($("#homeForm"));
@@ -51,7 +51,7 @@ function setTheLastView() {
 }
 
 function clearAll() {
-    $("#homeForm,#customerForm,#itemForm,#placeOrderForm,#orderDetailForm").css('display', 'none');
+    $("#homeForm,#browseCarForm,#rentCarForm,#bookingDetailsForm,#yourPaymentDetailForm").css('display', 'none');
 }
 
 function setView(viewOb) {
@@ -66,18 +66,18 @@ $("#Home").click(function () {
     setView($("#homeForm"));
 });
 
-$("#Customer").click(function () {
-    setView($("#customerForm"));
+$("#BrowseCar").click(function () {
+    setView($("#browseCarForm"));
 });
 
-$("#Item").click(function () {
-    setView($("#itemForm"));
+$("#RentCar").click(function () {
+    setView($("#rentCarForm"));
 });
 
-$("#PlaceOrder").click(function () {
-    setView($("#placeOrderForm"));
+$("#YourRent").click(function () {
+    setView($("#bookingDetailsForm"));
 });
 
-$("#OrderDetail").click(function () {
-    setView($("#orderDetailForm"));
+$("#Payment").click(function () {
+    setView($("#yourPaymentDetailForm"));
 });
