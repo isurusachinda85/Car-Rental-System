@@ -939,17 +939,50 @@
 
 <!---------------------------Your Rent Detail-------------->
 
-<main>
+<main class="container">
     <section class="bookingDetail" id="bookingDetails">
         <div>
             <h1 class="text-primary fw-bold text-center">Your Booking Details</h1>
         </div>
     </section>
+    <div class="card bookingCard shadow ">
+        <div class="card-body">
+            <div class="row mt-2 mb-2 d-flex justify-content-center">
+                <div class="row justify-content-evenly gap-3" style="height: 300px">
+                    <table class="table table-striped mt-1 table table-bordered table-hover text-center">
+                        <thead class="bg-primary text-white">
+                        <tr>
+                            <th>Rent Id</th>
+                            <th>User NIC</th>
+                            <th>Car Reg NO</th>
+                            <th>Pick Up Date</th>
+                            <th>Pick Up Time</th>
+                            <th>Return Date</th>
+                            <th>Return Time</th>
+                            <th>Location</th>
+                            <th>Rent Type</th>
+                        </tr>
+                        </thead>
+                        <tbody id="bookingDetail">
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
 
 <!---------------------------Payment-------------->
 
-<main></main>
+<main>
+    <section class="paymentDetail" id="yourPaymentDetail">
+        <div>
+            <h1 class="text-primary fw-bold text-center">Your Payment Details</h1>
+        </div>
+    </section>
+</main>
 
 <script src="assets/js/bootstrap.js"></script>
 </body>

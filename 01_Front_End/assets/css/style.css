@@ -304,6 +304,15 @@
     position: relative;
     top: 480px;
 }
+.bookingCard{
+    position: relative;
+    top: 495px;
+}
+/*Payment detail*/
+.paymentDetail {
+    position: relative;
+    top: 550px;
+}
 
 @keyframes slideRight {
     0% {
