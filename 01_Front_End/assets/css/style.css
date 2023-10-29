@@ -298,6 +298,13 @@
     background: white;
     color: #0b5ed7;
 }
+/*booking detail*/
+
+.bookingDetail {
+    position: relative;
+    top: 480px;
+}
+
 @keyframes slideRight {
     0% {
         transform: translateX(-100px);
