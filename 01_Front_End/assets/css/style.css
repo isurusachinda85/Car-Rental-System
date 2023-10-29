@@ -291,6 +291,13 @@
     position: relative;
     top: 400px;
 }
+#addCart:hover{
+    color: white;
+}
+#res:hover{
+    background: white;
+    color: #0b5ed7;
+}
 @keyframes slideRight {
     0% {
         transform: translateX(-100px);
