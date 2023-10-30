@@ -103,7 +103,7 @@
                     <h2 class="mt-2 text-dark">Admin Dashboard</h2>
 
                     <div class="row dashboard justify-content-evenly">
-                        <div class="col-2 mt-3 " >
+                        <div class="col-2  mt-3 " >
                             <div class="card info-card car-card shadow border-0">
                                 <div class="card-body">
                                     <h5 class="card-title">All Cars</h5>
@@ -118,7 +118,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-2  mt-3">
+                        <div class="col-2  mt-3 ">
                             <div class="card info-card car-card  shadow border-0">
                                 <div class="card-body">
                                     <h5 class="card-title">Available Cars</h5>
@@ -133,7 +133,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-2  mt-3">
+                        <div class="col-2  mt-3 ">
                             <div class="card info-card car-card  shadow border-0">
                                 <div class="card-body">
                                     <h5 class="card-title">Reserved Cars</h5>
@@ -148,7 +148,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-2  mt-3">
+                        <div class="col-2  mt-3 ">
                             <div class="card info-card car-card  shadow border-0">
                                 <div class="card-body">
                                     <h5 class="card-title">Maintain Cars</h5>
@@ -181,7 +181,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-2 mt-3">
+                        <div class="col-2 mt-3 ">
                             <div class="card info-card car-card  shadow border-0">
                                 <div class="card-body">
                                     <h5 class="card-title">Available Drivers</h5>
@@ -196,7 +196,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-2 mt-3">
+                        <div class="col-2 mt-3 ">
                             <div class="card info-card car-card  shadow border-0">
                                 <div class="card-body">
                                     <h5 class="card-title">Reserved Drivers</h5>
@@ -229,32 +229,46 @@
                     </div>
 
                     <div class="row dashboard justify-content-evenly">
-
-                        <div class="col-3 ms-3 mt-3">
+                        <div class="col-3 mt-3">
                             <div class="card info-card car-card  shadow border-0">
                                 <div class="card-body">
-                                    <h5 class="card-title">Available Drivers</h5>
+                                    <h5 class="card-title">Total Booking</h5>
                                     <div class="d-flex align-items-center">
-                                        <div class="card-icon2 rounded-circle d-flex align-items-center justify-content-center">
-                                            <i class="fa fa-solid fa-user-tie"></i>
+                                        <div class="card-icon3 rounded-circle d-flex align-items-center justify-content-center">
+                                            <i class="fa fa-solid fa-book-open"></i>
                                         </div>
                                         <div class="ps-3 ">
-                                            <h6 class="fs-4 fw-bold" id="availableDrivers">0</h6>
+                                            <h6 class="fs-4 fw-bold" id="totalBooking">0</h6>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 ms-3 mt-3">
+                        <div class="col-3 mt-3">
                             <div class="card info-card car-card  shadow border-0">
                                 <div class="card-body">
-                                    <h5 class="card-title">Reserved Drivers</h5>
+                                    <h5 class="card-title">Pending Booking</h5>
                                     <div class="d-flex align-items-center">
-                                        <div class="card-icon2 rounded-circle d-flex align-items-center justify-content-center">
-                                            <i class="fa fa-solid fa-user-tie"></i>
+                                        <div class="card-icon3 rounded-circle d-flex align-items-center justify-content-center">
+                                            <i class="fa fa-solid fa-book-open"></i>
                                         </div>
                                         <div class="ps-3 ">
-                                            <h6 class="fs-4 fw-bold" id="reservedDrivers">0</h6>
+                                            <h6 class="fs-4 fw-bold" id="pendingBooking">0</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 mt-3">
+                            <div class="card info-card car-card  shadow border-0">
+                                <div class="card-body">
+                                    <h5 class="card-title">Active Booking</h5>
+                                    <div class="d-flex align-items-center">
+                                        <div class="card-icon3 rounded-circle d-flex align-items-center justify-content-center">
+                                            <i class="fa fa-solid fa-book-open"></i>
+                                        </div>
+                                        <div class="ps-3 ">
+                                            <h6 class="fs-4 fw-bold" id="activeBooking">0</h6>
                                         </div>
                                     </div>
                                 </div>
@@ -262,6 +276,53 @@
                         </div>
                     </div>
 
+                    <div class="row dashboard justify-content-evenly">
+                        <div class="col-3 mt-3">
+                            <div class="card info-card car-card  shadow border-0">
+                                <div class="card-body">
+                                    <h5 class="card-title">Daily Income</h5>
+                                    <div class="d-flex align-items-center">
+                                        <div class="card-icon4 rounded-circle d-flex align-items-center justify-content-center">
+                                            <i class="fa-solid fa-dollar-sign"></i>
+                                        </div>
+                                        <div class="ps-3 ">
+                                            <h6 class="fs-4 fw-bold" id="dailyIncome">0</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 mt-3">
+                            <div class="card info-card car-card  shadow border-0">
+                                <div class="card-body">
+                                    <h5 class="card-title">Monthly Income</h5>
+                                    <div class="d-flex align-items-center">
+                                        <div class="card-icon4 rounded-circle d-flex align-items-center justify-content-center">
+                                            <i class="fa-solid fa-money-bill-trend-up"></i>
+                                        </div>
+                                        <div class="ps-3 ">
+                                            <h6 class="fs-4 fw-bold" id="monthlyIncome">0</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 mt-3">
+                            <div class="card info-card car-card  shadow border-0">
+                                <div class="card-body">
+                                    <h5 class="card-title">Annually Income</h5>
+                                    <div class="d-flex align-items-center">
+                                        <div class="card-icon4 rounded-circle d-flex align-items-center justify-content-center">
+                                            <i class="fa-solid fa-sack-dollar"></i>
+                                        </div>
+                                        <div class="ps-3 ">
+                                            <h6 class="fs-4 fw-bold" id="annuallyIncome">0</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                 </section>
 

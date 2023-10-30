@@ -424,6 +424,20 @@
     color: #2eca6a;
     background: #e0f8e9;
 }
+.dashboard .card-icon3 {
+    font-size: 32px;
+    width: 64px;
+    height: 64px;
+    color: #ff4757;
+    background: #FCCFD5;
+}
+.dashboard .card-icon4 {
+    font-size: 32px;
+    width: 64px;
+    height: 64px;
+    color: #d49e04;
+    background: #ece0c4;
+}
 
 @keyframes slideRight {
     0% {
