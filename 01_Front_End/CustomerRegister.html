@@ -30,55 +30,65 @@
 
 <main class="container">
     <section class="row">
-
         <div class="card rentCard1 shadow ">
             <div class="card-body">
                 <form class="row g-3 container-fluid " id="customerForm">
                     <div class="row ">
+
                         <div class="col-12 col-sm-6 col-md-4">
                             <label class="form-label" for="cusName">Full Name</label>
                             <input aria-label="Customer Name" class="form-control" id="cusName" name="cusName"
                                    type="text">
                         </div>
+
                         <div class="col-12 col-sm-6 col-md-4">
                             <label class="form-label" for="cusEmail">Email Address</label>
                             <input aria-label="Customer Email" class="form-control" id="cusEmail" name="cusEmail"
                                    type="email">
                         </div>
+
                         <div class="col-12 col-sm-6 col-md-4">
                             <label class="form-label" for="cusNic">NIC NO</label>
                             <input aria-label="Nic No" class="form-control" id="cusNic" name="cusNic" type="text">
                         </div>
-                        <div class="mt-4 col-12 col-sm-6 col-md-4">
-                            <label class="form-label" for="cusUsername">Username</label>
-                            <input aria-label="Username" class="form-control" id="cusUsername" name="cusUsername"
-                                   type="text">
-                        </div>
-                        <div class="mt-4 col-12 col-sm-6 col-md-4">
-                            <label class="form-label" for="cusLicense">License NO</label>
-                            <input aria-label="license no" class="form-control" id="cusLicense" name="cusLicense"
-                                   type="text">
-                        </div>
-                        <div class="mt-4 col-12 col-sm-6 col-md-4">
-                            <label class="form-label" for="cusPassword">Password</label>
-                            <input aria-label="password" class="form-control" id="cusPassword" name="cusPassword"
-                                   type="password">
-                        </div>
+
                         <div class="mt-4 col-12 col-sm-6 col-md-4">
                             <label class="form-label" for="cusAddress">Address</label>
                             <input aria-label="Address" class="form-control" id="cusAddress" name="cusAddress"
                                    type="text">
                         </div>
+
                         <div class="mt-4 col-12 col-sm-6 col-md-4">
-                            <label class="form-label" for="cusComPassword">Confirm Password</label>
-                            <input aria-label="ComPassword" class="form-control" id="cusComPassword"
-                                   name="cusComPassword" type="password">
+                            <label class="form-label" for="cusLicense">License NO</label>
+                            <input aria-label="license no" class="form-control" id="cusLicense" name="cusLicense"
+                                   type="text">
                         </div>
+
                         <div class="mt-4 col-12 col-sm-6 col-md-4">
                             <label class="form-label" for="contactNo">Contact Number</label>
                             <input aria-label="Contact" class="form-control" id="contactNo" name="contactNo"
                                    type="text">
                         </div>
+
+                        <div class="mt-4 col-12 col-sm-6 col-md-4">
+                            <label class="form-label" for="cusUsername">Username</label>
+                            <input aria-label="Username" class="form-control" id="cusUsername" name="cusUsername"
+                                   type="text">
+                        </div>
+
+
+                        <div class="mt-4 col-12 col-sm-6 col-md-4">
+                            <label class="form-label" for="cusPassword">Password</label>
+                            <input aria-label="password" class="form-control" id="cusPassword" name="cusPassword"
+                                   type="password">
+                        </div>
+
+                        <div class="mt-4 col-12 col-sm-6 col-md-4">
+                            <label class="form-label" for="cusComPassword">Confirm Password</label>
+                            <input aria-label="ComPassword" class="form-control" id="cusComPassword"
+                                   name="cusComPassword" type="password">
+                        </div>
+
 
                         <div class="mt-4 col-12 col-sm-6 col-md-4">
                             <label class="form-label" for="roleType">Role Type</label>
@@ -97,6 +107,7 @@
                             <label class="form-label" for="cusNicImage">NIC Photo</label>
                             <input class="form-control" id="cusNicImage" name="nicImage" type="file">
                         </div>
+
                         <div class="mt-4 col-12 col-sm-6 col-md-4">
                             <div class="image-context border border-2 rounded-3" id="cusNicImgContext"></div>
                         </div>
@@ -105,7 +116,7 @@
                             <div class="image-context border border-2 rounded-3" id="cusLicenseImgContext"></div>
                         </div>
 
-                        <div class="mt-4 col-12 col-sm-6 col-md-4">
+                        <div class="mt-3 col-12 col-sm-6 col-md-4">
                             <button class="col-md-6 btn btn-primary mt-3" id="btnSaveCustomer" type="button">
                                 Register
                             </button>
@@ -115,11 +126,11 @@
                 </form>
             </div>
         </div>
-
-
     </section>
 
 </main>
+<script src="assets/js/jquery-3.7.0.min.js"></script>
+
 <script src="assets/js/bootstrap.js"></script>
 </body>
 </html>

@@ -249,6 +249,10 @@
     width: 400px;
     height: 190px;
 }
+#btnSaveCustomer{
+    width: 250px;
+    height: 50px;
+}
 
 /*--------------------------Contact Page-----------------------*/
 .footer {
@@ -437,6 +441,20 @@
     height: 64px;
     color: #d49e04;
     background: #ece0c4;
+}
+
+/*-----Customer Form-----------*/
+.image-context1 {
+    width: 350px;
+    height: 190px;
+}
+#btnSaveCustomer1{
+    width: 250px;
+    height: 50px;
+}
+#btnUpdateCustomer1{
+    width: 250px;
+    height: 50px;
 }
 
 @keyframes slideRight {

@@ -7,6 +7,7 @@
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/fonts-awesome/css/all.min.css" rel="stylesheet">
+
 </head>
 <body>
 
@@ -40,47 +41,47 @@
 
                     <ul class="nav nav-pills flex-column mt-5">
                         <li class="nav-item py-2 py-sm-0">
-                            <a class="nav-link text-white" href="#adminDashBoard">
+                            <a class="nav-link text-white" href="#adminDashBoardForm" id="Dashboard">
                                 <i class="fs-5 fa fa fa-gauge"></i>
                                 <span class="fs-4 ms-2 d-none d-sm-inline">Dashboard</span>
                             </a>
                         </li>
                         <li class="nav-item py-2 py-sm-0">
-                            <a class="nav-link text-white" href="#customerManage">
+                            <a class="nav-link text-white" href="#customerManageForm" id="CustomerManage">
                                 <i class="fs-5 fa fa fa-user-group"></i>
                                 <span class="fs-4 ms-2 d-none d-sm-inline">Customer Manage</span>
                             </a>
                         </li>
                         <li class="nav-item py-2 py-sm-0">
-                            <a class="nav-link text-white" href="#driverManage">
+                            <a class="nav-link text-white" href="#driverManageForm" id="DriverManage">
                                 <i class="fs-5 fa-solid fa-user-tie"></i>
                                 <span class="fs-4 ms-2 d-none d-sm-inline">Driver Manage</span>
                             </a>
                         </li>
 
                         <li class="nav-item py-2 py-sm-0">
-                            <a class="nav-link text-white" href="#carManage">
+                            <a class="nav-link text-white" href="#carManageForm" id="CarManage">
                                 <i class="fs-5 fa fa fa-car-alt"></i>
                                 <span class="fs-4 ms-2 d-none d-sm-inline">Car Manage</span>
                             </a>
                         </li>
 
                         <li class="nav-item py-2 py-sm-0">
-                            <a class="nav-link text-white" href="#paymentDetail">
+                            <a class="nav-link text-white" href="#paymentDetailForm" id="PaymentDetail">
                                 <i class="fs-5 fa-solid fa-money-bill-1-wave"></i>
                                 <span class="fs-4 ms-2 d-none d-sm-inline">Payment Detail</span>
                             </a>
                         </li>
 
                         <li class="nav-item py-2 py-sm-0">
-                            <a class="nav-link text-white" href="#rentDetail">
+                            <a class="nav-link text-white" href="#rentDetailForm" id="RentDetail">
                                 <i class="fs-5 fa fa fa-table-list"></i>
                                 <span class="fs-4 ms-2 d-none d-sm-inline">Rent Detail</span>
                             </a>
                         </li>
 
                         <li class="nav-item py-2 py-sm-0">
-                            <a class="nav-link text-white" href="#rentRequest">
+                            <a class="nav-link text-white" href="#rentRequestForm" id="RentRequest">
                                 <i class="fs-5 fa-solid fa-message"></i>
                                 <span class="fs-4 ms-2 d-none d-sm-inline">Rent Request</span>
                             </a>
@@ -97,12 +98,12 @@
                 </div>
             </div>
 
-            <section style="border: 1px solid red;width: 83%;">
+            <section style="width: 83%;">
 
 
                 <!-----------------------Dashboard-------------------------------->
 
-                <section id="adminDashBoard" style="border: 1px solid red;height: 100%">
+                <section id="adminDashBoardForm">
                     <h2 class="mt-2 text-dark">Admin Dashboard</h2>
 
                     <div class="row dashboard justify-content-evenly">
@@ -169,7 +170,7 @@
                     </div>
 
                     <div class="row dashboard justify-content-evenly">
-                        <div class="col-2 mt-4 " >
+                        <div class="col-2 mt-4 ">
                             <div class="card info-card car-card shadow border-0">
                                 <div class="card-body">
                                     <h5 class="card-title">All Drivers</h5>
@@ -214,7 +215,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-2 mt-4 " >
+                        <div class="col-2 mt-4 ">
                             <div class="card info-card car-card shadow border-0">
                                 <div class="card-body">
                                     <h5 class="card-title">Registered User</h5>
@@ -330,27 +331,145 @@
                 </section>
 
 
-                <section id="customerManage" style="border: 1px solid red;height: 100%">
+                <section id="customerManageForm">
                     <h2 class="mt-2 text-dark">Customer Manage</h2>
+
+                    <section class="row container ">
+                        <div class="card rentCard1 shadow border-0 ">
+                            <div class="card-body">
+                                <form class="row g-3 container-fluid " style="margin-top: 20px;">
+                                    <div class="row ">
+
+                                        <div class="col-12 col-sm-6 col-md-4">
+                                            <label class="form-label" for="cusName">Full Name</label>
+                                            <input aria-label="Customer Name" class="form-control" id="cusName"
+                                                   name="cusName"
+                                                   type="text">
+                                        </div>
+
+                                        <div class="col-12 col-sm-6 col-md-4">
+                                            <label class="form-label" for="cusEmail">Email Address</label>
+                                            <input aria-label="Customer Email" class="form-control" id="cusEmail"
+                                                   name="cusEmail"
+                                                   type="email">
+                                        </div>
+
+                                        <div class="col-12 col-sm-6 col-md-4">
+                                            <label class="form-label" for="cusNic">NIC NO</label>
+                                            <input aria-label="Nic No" class="form-control" id="cusNic" name="cusNic"
+                                                   type="text">
+                                        </div>
+
+                                        <div class="mt-4 col-12 col-sm-6 col-md-4">
+                                            <label class="form-label" for="cusAddress">Address</label>
+                                            <input aria-label="Address" class="form-control" id="cusAddress"
+                                                   name="cusAddress"
+                                                   type="text">
+                                        </div>
+
+                                        <div class="mt-4 col-12 col-sm-6 col-md-4">
+                                            <label class="form-label" for="cusLicense">License NO</label>
+                                            <input aria-label="license no" class="form-control" id="cusLicense"
+                                                   name="cusLicense"
+                                                   type="text">
+                                        </div>
+
+                                        <div class="mt-4 col-12 col-sm-6 col-md-4">
+                                            <label class="form-label" for="contactNo">Contact Number</label>
+                                            <input aria-label="Contact" class="form-control" id="contactNo"
+                                                   name="contactNo"
+                                                   type="text">
+                                        </div>
+
+                                        <div class="mt-4 col-12 col-sm-6 col-md-4">
+                                            <label class="form-label" for="cusUsername">Username</label>
+                                            <input aria-label="Username" class="form-control" id="cusUsername"
+                                                   name="cusUsername"
+                                                   type="text">
+                                        </div>
+
+
+                                        <div class="mt-4 col-12 col-sm-6 col-md-4">
+                                            <label class="form-label" for="cusPassword">Password</label>
+                                            <input aria-label="password" class="form-control" id="cusPassword"
+                                                   name="cusPassword"
+                                                   type="password">
+                                        </div>
+
+                                        <div class="mt-4 col-12 col-sm-6 col-md-4">
+                                            <label class="form-label" for="cusComPassword">Confirm Password</label>
+                                            <input aria-label="ComPassword" class="form-control" id="cusComPassword"
+                                                   name="cusComPassword" type="password">
+                                        </div>
+
+
+                                        <div class="mt-4 col-12 col-sm-6 col-md-4">
+                                            <label class="form-label" for="roleType">Role Type</label>
+                                            <select aria-label="Default select example" class="form-select"
+                                                    id="roleType"
+                                                    name="roleType">
+                                                <option value="RegisterUser">Register User</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="mt-4 col-12 col-sm-6 col-md-4">
+                                            <label class="form-label" for="cusLicenseImage">License Photo</label>
+                                            <input class="form-control" id="cusLicenseImage" name="licenseImage"
+                                                   type="file">
+                                        </div>
+
+                                        <div class="mt-4 col-12 col-sm-6 col-md-4">
+                                            <label class="form-label" for="cusNicImage">NIC Photo</label>
+                                            <input class="form-control" id="cusNicImage" name="nicImage" type="file">
+                                        </div>
+
+                                        <div class="mt-4 col-12 col-sm-6 col-md-4">
+                                            <div class="image-context1 border border-2 rounded-3"
+                                                 id="cusNicImgContext1">
+                                            </div>
+                                        </div>
+
+                                        <div class="mt-4 col-12 col-sm-6 col-md-4">
+                                            <div class="image-context1 border border-2 rounded-3"
+                                                 id="cusLicenseImgContext1">
+                                            </div>
+                                        </div>
+
+                                        <div class="mt-4 col-12 col-sm-6 col-md-4">
+                                            <button class="col-md-6 btn btn-primary mt-3" id="btnSaveCustomer1"
+                                                    type="button">
+                                                Register
+                                            </button>
+                                            <button class="col-md-6 btn btn-warning mt-3" id="btnUpdateCustomer1"
+                                                    type="button">
+                                                Update
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </section>
                 </section>
 
-                <section id="driverManage" style="border: 1px solid red;height: 100%">
+                <section id="driverManageForm" style="border: 1px solid red;height: 100%">
                     <h2 class="mt-2 text-dark">Driver Manage</h2>
                 </section>
 
-                <section id="carManage" style="border: 1px solid red;height: 100%">
+                <section id="carManageForm" style="border: 1px solid red;height: 100%">
                     <h2 class="mt-2 text-dark">Car Manage</h2>
                 </section>
 
-                <section id="paymentDetail" style="border: 1px solid red;height: 100%">
+                <section id="paymentDetailForm" style="border: 1px solid red;height: 100%">
                     <h2 class="mt-2 text-dark">Payment Detail</h2>
                 </section>
 
-                <section id="rentDetail" style="border: 1px solid red;height: 100%">
+                <section id="rentDetailForm" style="border: 1px solid red;height: 100%">
                     <h2 class="mt-2 text-dark">Rent Detail</h2>
                 </section>
 
-                <section id="rentRequest" style="border: 1px solid red;height: 100%">
+                <section id="rentRequestForm" style="border: 1px solid red;height: 100%">
                     <h2 class="mt-2 text-dark">Rent Request</h2>
                 </section>
 
@@ -361,7 +480,7 @@
     </div>
 </main>
 <script src="assets/js/jquery-3.7.0.min.js"></script>
-
+<script src="controllers/AdminDashBoardController.js"></script>
 <script src="assets/js/bootstrap.js"></script>
 </body>
 </html>
