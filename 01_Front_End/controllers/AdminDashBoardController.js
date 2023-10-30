@@ -14,6 +14,9 @@ function saveLastView(clickedID) {
         case "customerManageForm":
             localStorage.setItem("view", "CUSTOMERMANAGE");
             break;
+        case "customerDetailForm":
+            localStorage.setItem("view", "CUSTOMERDETAIL");
+            break;
         case "driverManageForm":
             localStorage.setItem("view", "DRIVERMANAGE");
             break;
@@ -42,6 +45,9 @@ function setTheLastView() {
         case "CUSTOMERMANAGE":
             setView($("#customerManageForm"));
             break;
+        case "CUSTOMERDETAIL":
+            setView($("#customerDetailForm"));
+            break;
         case "DRIVERMANAGE":
             setView($("#driverManageForm"));
             break;
@@ -63,7 +69,7 @@ function setTheLastView() {
 }
 
 function clearAll() {
-    $("#adminDashBoardForm,#customerManageForm,#driverManageForm,#carManageForm,#paymentDetailForm,#rentDetailForm,#rentRequestForm").css('display', 'none');
+    $("#adminDashBoardForm,#customerManageForm,#customerDetailForm,#driverManageForm,#carManageForm,#paymentDetailForm,#rentDetailForm,#rentRequestForm").css('display', 'none');
 }
 
 function setView(viewOb) {
@@ -80,6 +86,10 @@ $("#Dashboard").click(function () {
 
 $("#CustomerManage").click(function () {
     setView($("#customerManageForm"));
+});
+
+$("#CustomerDetail").click(function () {
+    setView($("#customerDetailForm"));
 });
 
 $("#DriverManage").click(function () {
