@@ -40,47 +40,47 @@
 
                     <ul class="nav nav-pills flex-column mt-5">
                         <li class="nav-item py-2 py-sm-0">
-                            <a class="nav-link text-white" href="#">
+                            <a class="nav-link text-white" href="#adminDashBoard">
                                 <i class="fs-5 fa fa fa-gauge"></i>
                                 <span class="fs-4 ms-2 d-none d-sm-inline">Dashboard</span>
                             </a>
                         </li>
                         <li class="nav-item py-2 py-sm-0">
-                            <a class="nav-link text-white" href="#">
+                            <a class="nav-link text-white" href="#customerManage">
                                 <i class="fs-5 fa fa fa-user-group"></i>
                                 <span class="fs-4 ms-2 d-none d-sm-inline">Customer Manage</span>
                             </a>
                         </li>
                         <li class="nav-item py-2 py-sm-0">
-                            <a class="nav-link text-white" href="#">
+                            <a class="nav-link text-white" href="#driverManage">
                                 <i class="fs-5 fa-solid fa-user-tie"></i>
                                 <span class="fs-4 ms-2 d-none d-sm-inline">Driver Manage</span>
                             </a>
                         </li>
 
                         <li class="nav-item py-2 py-sm-0">
-                            <a class="nav-link text-white" href="#">
+                            <a class="nav-link text-white" href="#carManage">
                                 <i class="fs-5 fa fa fa-car-alt"></i>
                                 <span class="fs-4 ms-2 d-none d-sm-inline">Car Manage</span>
                             </a>
                         </li>
 
                         <li class="nav-item py-2 py-sm-0">
-                            <a class="nav-link text-white" href="#">
+                            <a class="nav-link text-white" href="#paymentDetail">
                                 <i class="fs-5 fa-solid fa-money-bill-1-wave"></i>
                                 <span class="fs-4 ms-2 d-none d-sm-inline">Payment Detail</span>
                             </a>
                         </li>
 
                         <li class="nav-item py-2 py-sm-0">
-                            <a class="nav-link text-white" href="#">
+                            <a class="nav-link text-white" href="#rentDetail">
                                 <i class="fs-5 fa fa fa-table-list"></i>
                                 <span class="fs-4 ms-2 d-none d-sm-inline">Rent Detail</span>
                             </a>
                         </li>
 
                         <li class="nav-item py-2 py-sm-0">
-                            <a class="nav-link text-white" href="#">
+                            <a class="nav-link text-white" href="#rentRequest">
                                 <i class="fs-5 fa-solid fa-message"></i>
                                 <span class="fs-4 ms-2 d-none d-sm-inline">Rent Request</span>
                             </a>
@@ -99,13 +99,195 @@
 
             <section style="border: 1px solid red;width: 83%;">
 
-                <section style="border: 1px solid red;height: 100%">
-                    <h2 class="text-dark">Content1</h2>
+                <section id="adminDashBoard" style="border: 1px solid red;height: 100%">
+                    <h2 class="mt-2 text-dark">Admin Dashboard</h2>
+
+                    <div class="row dashboard justify-content-evenly">
+                        <div class="col-2 mt-3 " >
+                            <div class="card info-card car-card shadow border-0">
+                                <div class="card-body">
+                                    <h5 class="card-title">All Cars</h5>
+                                    <div class="d-flex align-items-center">
+                                        <div class="card-icon1 rounded-circle d-flex align-items-center justify-content-center">
+                                            <i class="fa fa-car-alt"></i>
+                                        </div>
+                                        <div class="ps-3 ">
+                                            <h6 class="fs-4 fw-bold" id="allCars">0</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2  mt-3">
+                            <div class="card info-card car-card  shadow border-0">
+                                <div class="card-body">
+                                    <h5 class="card-title">Available Cars</h5>
+                                    <div class="d-flex align-items-center">
+                                        <div class="card-icon1 rounded-circle d-flex align-items-center justify-content-center">
+                                            <i class="fa fa-car-alt"></i>
+                                        </div>
+                                        <div class="ps-3 ">
+                                            <h6 class="fs-4 fw-bold" id="availableCar">0</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2  mt-3">
+                            <div class="card info-card car-card  shadow border-0">
+                                <div class="card-body">
+                                    <h5 class="card-title">Reserved Cars</h5>
+                                    <div class="d-flex align-items-center">
+                                        <div class="card-icon1 rounded-circle d-flex align-items-center justify-content-center">
+                                            <i class="fa fa-car-alt"></i>
+                                        </div>
+                                        <div class="ps-3 ">
+                                            <h6 class="fs-4 fw-bold" id="reservedCar">0</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2  mt-3">
+                            <div class="card info-card car-card  shadow border-0">
+                                <div class="card-body">
+                                    <h5 class="card-title">Maintain Cars</h5>
+                                    <div class="d-flex align-items-center">
+                                        <div class="card-icon1 rounded-circle d-flex align-items-center justify-content-center">
+                                            <i class="fa fa-car-alt"></i>
+                                        </div>
+                                        <div class="ps-3 ">
+                                            <h6 class="fs-4 fw-bold" id="maintainCar">0</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row dashboard justify-content-evenly">
+                        <div class="col-2 mt-3 " >
+                            <div class="card info-card car-card shadow border-0">
+                                <div class="card-body">
+                                    <h5 class="card-title">All Drivers</h5>
+                                    <div class="d-flex align-items-center">
+                                        <div class="card-icon2 rounded-circle d-flex align-items-center justify-content-center">
+                                            <i class="fa fa-solid fa-user-tie"></i>
+                                        </div>
+                                        <div class="ps-3 ">
+                                            <h6 class="fs-4 fw-bold" id="allDriver">0</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 mt-3">
+                            <div class="card info-card car-card  shadow border-0">
+                                <div class="card-body">
+                                    <h5 class="card-title">Available Drivers</h5>
+                                    <div class="d-flex align-items-center">
+                                        <div class="card-icon2 rounded-circle d-flex align-items-center justify-content-center">
+                                            <i class="fa fa-solid fa-user-tie"></i>
+                                        </div>
+                                        <div class="ps-3 ">
+                                            <h6 class="fs-4 fw-bold" id="availableDrivers">0</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 mt-3">
+                            <div class="card info-card car-card  shadow border-0">
+                                <div class="card-body">
+                                    <h5 class="card-title">Reserved Drivers</h5>
+                                    <div class="d-flex align-items-center">
+                                        <div class="card-icon2 rounded-circle d-flex align-items-center justify-content-center">
+                                            <i class="fa fa-solid fa-user-tie"></i>
+                                        </div>
+                                        <div class="ps-3 ">
+                                            <h6 class="fs-4 fw-bold" id="reservedDrivers">0</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 mt-3 " >
+                            <div class="card info-card car-card shadow border-0">
+                                <div class="card-body">
+                                    <h5 class="card-title">Registered User</h5>
+                                    <div class="d-flex align-items-center">
+                                        <div class="card-icon2 rounded-circle d-flex align-items-center justify-content-center">
+                                            <i class="fa fa-solid fa-user-group"></i>
+                                        </div>
+                                        <div class="ps-3 ">
+                                            <h6 class="fs-4 fw-bold" id="allUser">0</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row dashboard justify-content-evenly">
+
+                        <div class="col-3 ms-3 mt-3">
+                            <div class="card info-card car-card  shadow border-0">
+                                <div class="card-body">
+                                    <h5 class="card-title">Available Drivers</h5>
+                                    <div class="d-flex align-items-center">
+                                        <div class="card-icon2 rounded-circle d-flex align-items-center justify-content-center">
+                                            <i class="fa fa-solid fa-user-tie"></i>
+                                        </div>
+                                        <div class="ps-3 ">
+                                            <h6 class="fs-4 fw-bold" id="availableDrivers">0</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 ms-3 mt-3">
+                            <div class="card info-card car-card  shadow border-0">
+                                <div class="card-body">
+                                    <h5 class="card-title">Reserved Drivers</h5>
+                                    <div class="d-flex align-items-center">
+                                        <div class="card-icon2 rounded-circle d-flex align-items-center justify-content-center">
+                                            <i class="fa fa-solid fa-user-tie"></i>
+                                        </div>
+                                        <div class="ps-3 ">
+                                            <h6 class="fs-4 fw-bold" id="reservedDrivers">0</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </section>
 
 
-                <section style="border: 1px solid red;height: 100%">
-                    <h2 class="text-dark">Content1</h2>
+                <section id="customerManage" style="border: 1px solid red;height: 100%">
+                    <h2 class="mt-2 text-dark">Customer Manage</h2>
+                </section>
+
+                <section id="driverManage" style="border: 1px solid red;height: 100%">
+                    <h2 class="mt-2 text-dark">Driver Manage</h2>
+                </section>
+
+                <section id="carManage" style="border: 1px solid red;height: 100%">
+                    <h2 class="mt-2 text-dark">Car Manage</h2>
+                </section>
+
+                <section id="paymentDetail" style="border: 1px solid red;height: 100%">
+                    <h2 class="mt-2 text-dark">Payment Detail</h2>
+                </section>
+
+                <section id="rentDetail" style="border: 1px solid red;height: 100%">
+                    <h2 class="mt-2 text-dark">Rent Detail</h2>
+                </section>
+
+                <section id="rentRequest" style="border: 1px solid red;height: 100%">
+                    <h2 class="mt-2 text-dark">Rent Request</h2>
                 </section>
 
             </section>
@@ -114,7 +296,7 @@
         </div>
     </div>
 </main>
-
+<script src="assets/js/jquery-3.7.0.min.js"></script>
 
 <script src="assets/js/bootstrap.js"></script>
 </body>

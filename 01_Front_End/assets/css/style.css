@@ -409,6 +409,21 @@
 .nav-pills li{
     margin-top: 7px;
 }
+/*-----Dashboard-----------*/
+.dashboard .card-icon1 {
+    font-size: 32px;
+    width: 64px;
+    height: 64px;
+    color: #0b5ed7;
+    background: #D2DEF3;
+}
+.dashboard .card-icon2 {
+    font-size: 32px;
+    width: 64px;
+    height: 64px;
+    color: #2eca6a;
+    background: #e0f8e9;
+}
 
 @keyframes slideRight {
     0% {
