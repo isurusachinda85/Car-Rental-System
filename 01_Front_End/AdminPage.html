@@ -6,11 +6,11 @@
     <meta content="width=device-width initial-scale=1 user-scalable=no" name="viewport">
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/fonts-awesome/css/all.css">
+    <link href="assets/fonts-awesome/css/all.min.css" rel="stylesheet">
 </head>
 <body>
 
-<header class="position-fixed w-100 shadow z-1">
+<!--<header class="position-fixed w-100 shadow z-1">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <img alt="logo" class="logo" src="assets/img/logo1.png" width="50">
@@ -27,39 +27,69 @@
             </div>
         </div>
     </nav>
-</header>
+</header>-->
 <main>
     <div class="container-fluid">
         <div class="row flex-nowrap">
-            <div class="bg-dark col-auto col-md-3 col-lg-2 min-vh-100 d-flex flex-column justify-content-between">
+            <div class="bg-primary col-auto col-md-3 col-lg-2 min-vh-100 d-flex flex-column justify-content-between">
                 <div class="bg-primary min-vh-100 p-2">
+
+                    <a class="d-flex justify-content-center fw-bold text-decoration-none  text-white">
+                        <span class="easyCar fs-4 d-none d-sm-inline">Easy Car Rent</span>
+                    </a>
 
                     <ul class="nav nav-pills flex-column mt-5">
                         <li class="nav-item py-2 py-sm-0">
                             <a class="nav-link text-white" href="#">
-                                <i class="fs-5 fa fa fa-gauge"></i><span class="fs-4 ms-3 d-none d-sm-inline">Dashboard</span>
-                            </a>
-                        </li>
-                        <li class="nav-item py-2 py-sm-0">
-                            <a class="nav-link text-white" href="#" >
-                                <i class="fs-5 fa fa fa-house"></i><span class="fs-4 ms-3 d-none d-sm-inline">Dashboard</span>
+                                <i class="fs-5 fa fa fa-gauge"></i>
+                                <span class="fs-4 ms-2 d-none d-sm-inline">Dashboard</span>
                             </a>
                         </li>
                         <li class="nav-item py-2 py-sm-0">
                             <a class="nav-link text-white" href="#">
-                                <i class="fs-5 fa fa fa-table-list"></i><span class="fs-4 ms-3 d-none d-sm-inline">Customer</span>
+                                <i class="fs-5 fa fa fa-user-group"></i>
+                                <span class="fs-4 ms-2 d-none d-sm-inline">Customer Manage</span>
+                            </a>
+                        </li>
+                        <li class="nav-item py-2 py-sm-0">
+                            <a class="nav-link text-white" href="#">
+                                <i class="fs-5 fa-solid fa-user-tie"></i>
+                                <span class="fs-4 ms-2 d-none d-sm-inline">Driver Manage</span>
                             </a>
                         </li>
 
                         <li class="nav-item py-2 py-sm-0">
                             <a class="nav-link text-white" href="#">
-                                <i class="fs-5 fa fa fa-table-list"></i><span class="fs-4 ms-3 d-none d-sm-inline">Customer</span>
+                                <i class="fs-5 fa fa fa-car-alt"></i>
+                                <span class="fs-4 ms-2 d-none d-sm-inline">Car Manage</span>
                             </a>
                         </li>
 
                         <li class="nav-item py-2 py-sm-0">
                             <a class="nav-link text-white" href="#">
-                                <i class="fs-5 fa fa fa-table-list"></i><span class="fs-4 ms-3 d-none d-sm-inline">Customer</span>
+                                <i class="fs-5 fa-solid fa-money-bill-1-wave"></i>
+                                <span class="fs-4 ms-2 d-none d-sm-inline">Payment Detail</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item py-2 py-sm-0">
+                            <a class="nav-link text-white" href="#">
+                                <i class="fs-5 fa fa fa-table-list"></i>
+                                <span class="fs-4 ms-2 d-none d-sm-inline">Rent Detail</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item py-2 py-sm-0">
+                            <a class="nav-link text-white" href="#">
+                                <i class="fs-5 fa-solid fa-message"></i>
+                                <span class="fs-4 ms-2 d-none d-sm-inline">Rent Request</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item py-2 py-sm-0">
+                            <a class="nav-link text-white" href="#">
+                                <i class="fs-5 fa fa fa-sign-out"></i>
+                                <span class="fs-4 ms-2 d-none d-sm-inline">Log Out</span>
                             </a>
                         </li>
 
@@ -84,7 +114,6 @@
         </div>
     </div>
 </main>
-
 
 
 <script src="assets/js/bootstrap.js"></script>
