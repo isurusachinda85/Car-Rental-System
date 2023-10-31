@@ -59,6 +59,7 @@
                             </a>
                         </li>
 
+
                         <li class="nav-item py-2 py-sm-0">
                             <a class="nav-link text-white" href="#paymentDetailForm" id="PaymentDetail">
                                 <i class="fs-5 fa-solid fa-money-bill-1-wave"></i>
@@ -827,37 +828,38 @@
                         </div>
                     </section>
 
-                    <div class="mt-5 card rentCard1 shadow border-0" style="height: 500px">
-                        <div class="card-body">
-                            <table class="table table-striped mt-1 table table-bordered table-hover text-center" style="width: 100%">
-                                <thead class="bg-primary text-white">
-                                <tr>
-                                    <th>Register No</th>
-                                    <th>Brand</th>
-                                    <th>Type</th>
-                                    <th>Color</th>
-                                    <th>Fuel Type</th>
-                                    <th>Transmission</th>
-                                    <th>Passengers</th>
-                                    <th>Meter Value</th>
-                                    <th>Daily Rate(Km)</th>
-                                    <th>Monthly Rate(Km)</th>
-                                    <th>Daily Rate(Rs)</th>
-                                    <th>Monthly Rate(Rs)</th>
-                                    <th>Free Day(Km)</th>
-                                    <th>Free Month(Km)</th>
-                                    <th>Extra Km(Rs)</th>
-                                    <th>Damage Cost(Rs)</th>
-                                    <th>Availability</th>
-                                </tr>
-                                </thead>
-                                <tbody id="tblCars">
-
-
-                                </tbody>
-                            </table>
+                    <div class="row mt-1 mt-md-2 mt-lg-4 justify-content-around" style="height: 320px;">
+                        <div class="col-11 justify-content-around sectionBorder"
+                             style="height: 290px; background: white">
+                            <div class="table-responsive customerTableDiv overflow-auto " style="height: 300px;">
+                                <table class="table text-nowrap table-light table-striped table-bordered table-hover">
+                                    <thead class="text-dark table-primary text-center  table-bordered sticky-top">
+                                    <tr>
+                                        <th>Register No</th>
+                                        <th>Brand</th>
+                                        <th>Type</th>
+                                        <th>Color</th>
+                                        <th>Fuel Type</th>
+                                        <th>Transmission</th>
+                                        <th>Passengers</th>
+                                        <th>Meter Value</th>
+                                        <th>Daily Rate(Km)</th>
+                                        <th>Monthly Rate(Km)</th>
+                                        <th>Daily Rate(Rs)</th>
+                                        <th>Monthly Rate(Rs)</th>
+                                        <th>Free Day(Km)</th>
+                                        <th>Free Month(Km)</th>
+                                        <th>Extra Km(Rs)</th>
+                                        <th>Damage Cost(Rs)</th>
+                                        <th>Availability</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody id="carTable"></tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
+
                 </section>
 
                 <!-----------------------Dashboard-------------------------------->
