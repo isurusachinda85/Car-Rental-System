@@ -919,9 +919,99 @@
                     </div>
                 </section>
 
-                <!-----------------------Dashboard-------------------------------->
-                <section id="rentRequestForm" style="border: 1px solid red;height: 100%">
+                <!-----------------------Rent Request-------------------------------->
+                <section id="rentRequestForm">
                     <h2 class="mt-2 text-dark">Rent Request</h2>
+
+                    <section class="row container ">
+                        <div class="card rentCard1 shadow border-0 ">
+                            <div class="card-body">
+                                <form class="row g-3 container-fluid " style="margin-top: 20px;">
+                                    <div class="row ">
+
+                                        <div class="col-12 col-sm-6 col-md-3">
+                                            <label class="form-label" for="rentId">Rent ID</label>
+                                            <input aria-label="RentID" class="form-control" id="rentId"
+                                                   name="rentId"
+                                                   placeholder="REN-001"
+                                                   type="text">
+                                        </div>
+
+                                        <div class="col-12 col-sm-6 col-md-3">
+                                            <label class="form-label" for="driverID">Driver ID</label>
+                                            <select aria-label="Default select example" class="form-select"
+                                                    id="driverID"
+                                                    name="driverID">
+                                            </select>
+                                        </div>
+
+                                        <div class="col-12 col-sm-6 col-md-3">
+                                            <label class="form-label" for="brand">Customer NIC</label>
+                                            <input aria-label="Brand" class="form-control" id="cusNicNo"
+                                                   name="cusNicNo"
+                                                   placeholder="NIC NO"
+                                                   type="text">
+                                        </div>
+
+
+
+                                        <div class="col-12 col-sm-6 col-md-3">
+                                            <label class="form-label" for="reqState">Request State</label>
+                                            <input aria-label="Color" class="form-control" id="reqState" name="reqState"
+                                                   placeholder="State"
+                                                   type="text">
+                                        </div>
+
+
+
+                                        <div class="mt-3  gap-4 col d-flex justify-content-end">
+                                            <button class="col-md-1 btn btn-primary mt-3" id="accept"
+                                                    type="button">
+                                                Accept
+                                            </button>
+
+                                            <button class="col-md-1 btn btn-danger mt-3" id="reject"
+                                                    type="button">
+                                                Reject
+                                            </button>
+
+                                            <button class="col-md-1 btn btn-warning mt-3" id="payment"
+                                                    type="button">
+                                                Payment
+                                            </button>
+
+                                        </div>
+
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+
+                    <div class="mt-5 card  shadow border-0" style="height: 400px">
+                        <div class="card-body">
+                            <table class="table table-striped mt-1 table table-bordered table-hover text-center">
+                                <thead class="bg-primary text-white">
+                                <tr>
+                                    <th>Rent ID</th>
+                                    <th>Car Register NO</th>
+                                    <th>Customer NIC</th>
+                                    <th>Driver NIC</th>
+                                    <th>Driver Select</th>
+                                    <th>Rent Request</th>
+                                    <th>Pick Date</th>
+                                    <th>Pick Time</th>
+                                    <th>Return Date</th>
+                                    <th>Location</th>
+                                </tr>
+                                </thead>
+                                <tbody id="tblRentRequest">
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </section>
 
             </section>
