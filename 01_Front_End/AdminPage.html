@@ -532,7 +532,8 @@
                                             <select aria-label="Default select example" class="form-select"
                                                     id="drAvailable"
                                                     name="drAvailable">
-                                                <option value="RegisterUser">Available</option>
+                                                <option value="Available">Available</option>
+                                                <option value="NotAvailable">Not Available</option>
                                             </select>
                                         </div>
 
@@ -630,6 +631,233 @@
                 <!-----------------------Car Manage-------------------------------->
                 <section id="carManageForm">
                     <h2 class="mt-2 text-dark">Car Manage</h2>
+
+                    <section class="row container ">
+                        <div class="card rentCard1 shadow border-0 ">
+                            <div class="card-body">
+                                <form class="row g-3 container-fluid " style="margin-top: 20px;">
+                                    <div class="row ">
+
+                                        <div class="col-12 col-sm-6 col-md-3">
+                                            <label class="form-label" for="carRegNo">Register Number</label>
+                                            <input aria-label="RegNo" class="form-control" id="carRegNo"
+                                                   name="carRegNo"
+                                                   placeholder="ABC-9786"
+                                                   type="text">
+                                        </div>
+
+                                        <div class="col-12 col-sm-6 col-md-3">
+                                            <label class="form-label" for="brand">Brand</label>
+                                            <input aria-label="Brand" class="form-control" id="brand"
+                                                   name="brand"
+                                                   placeholder="Toyota"
+                                                   type="text">
+                                        </div>
+
+                                        <div class="col-12 col-sm-6 col-md-3">
+                                            <label class="form-label" for="carType">Type</label>
+                                            <select aria-label="Default select example" class="form-select"
+                                                    id="carType"
+                                                    name="carType">
+                                                <option value="General">General</option>
+                                                <option value="Premium">Premium</option>
+                                                <option value="Luxury">Luxury</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="col-12 col-sm-6 col-md-3">
+                                            <label class="form-label" for="color">Color</label>
+                                            <input aria-label="Color" class="form-control" id="color" name="color"
+                                                   placeholder="Red"
+                                                   type="text">
+                                        </div>
+
+                                        <div class="mt-3 col-12 col-sm-6 col-md-3">
+                                            <label class="form-label" for="fuelType">Fuel Type</label>
+                                            <select aria-label="Default select example" class="form-select"
+                                                    id="fuelType"
+                                                    name="fuelType">
+                                                <option value="Petrol">Petrol</option>
+                                                <option value="Diesel">Diesel</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="mt-3 col-12 col-sm-6 col-md-3">
+                                            <label class="form-label" for="trnType">Transmission Type</label>
+                                            <select aria-label="Default select example" class="form-select"
+                                                    id="trnType"
+                                                    name="trnType">
+                                                <option value="Auto">Auto</option>
+                                                <option value="Manual">Manual</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="mt-3 col-12 col-sm-6 col-md-3">
+                                            <label class="form-label" for="Passengers">No Of Passengers</label>
+                                            <input aria-label="Passenger" class="form-control" id="passengers"
+                                                   name="Passengers"
+                                                   placeholder="passengers"
+                                                   type="text">
+                                        </div>
+
+                                        <div class="mt-3 col-12 col-sm-6 col-md-3">
+                                            <label class="form-label" for="mValue">Meter Value</label>
+                                            <input aria-label="MValue" class="form-control" id="mValue"
+                                                   name="mValue"
+                                                   placeholder="Value"
+                                                   type="text">
+                                        </div>
+
+                                        <div class="mt-3 col-12 col-sm-6 col-md-3">
+                                            <label class="form-label" for="dayRateKm">Daily Rate(Km)</label>
+                                            <input aria-label="Day Rate Km" class="form-control" id="dayRateKm"
+                                                   name="dayRateKm"
+                                                   placeholder="100Km"
+                                                   type="text">
+                                        </div>
+
+                                        <div class="mt-3 col-12 col-sm-6 col-md-3">
+                                            <label class="form-label" for="dayRateKm">Monthly Rate(Km)</label>
+                                            <input aria-label="Month Rate Km" class="form-control" id="monthRateKm"
+                                                   name="monthRateKm"
+                                                   placeholder="1000Km"
+                                                   type="text">
+                                        </div>
+
+                                        <div class="mt-3 col-12 col-sm-6 col-md-3">
+                                            <label class="form-label" for="dayRateRs">Daily Rate(Rs)</label>
+                                            <input aria-label="Day Rate Rs" class="form-control" id="dayRateRs"
+                                                   name="dayRateRs"
+                                                   placeholder="LKR 1000.00"
+                                                   type="text">
+                                        </div>
+
+                                        <div class="mt-3 col-12 col-sm-6 col-md-3">
+                                            <label class="form-label" for="monthRateRs">Monthly Rate(Rs)</label>
+                                            <input aria-label="Month Rate Rs" class="form-control" id="monthRateRs"
+                                                   name="monthRateRs"
+                                                   placeholder="LKR 10000.00"
+                                                   type="text">
+                                        </div>
+
+                                        <div class="mt-3 col-12 col-sm-6 col-md-3">
+                                            <label class="form-label" for="freeKmDay">Free Km For Day(Km)</label>
+                                            <input aria-label="Free Day" class="form-control" id="freeKmDay"
+                                                   name="freeKmDay"
+                                                   placeholder="100Km"
+                                                   type="text">
+                                        </div>
+
+                                        <div class="mt-3 col-12 col-sm-6 col-md-3">
+                                            <label class="form-label" for="freeKmDay">Free Km For Month(Km)</label>
+                                            <input aria-label="Free Month" class="form-control" id="freeKmMonth"
+                                                   name="freeKmMonth"
+                                                   placeholder="2400Km"
+                                                   type="text">
+                                        </div>
+
+                                        <div class="mt-3 col-12 col-sm-6 col-md-3">
+                                            <label class="form-label" for="freeKmDay">Extra Km Price(Rs)</label>
+                                            <input aria-label="ExtraKm" class="form-control" id="extraKmRs"
+                                                   name="extraKmRs"
+                                                   placeholder="LKR 30.00"
+                                                   type="text">
+                                        </div>
+
+                                        <div class="mt-3 col-12 col-sm-6 col-md-3">
+                                            <label class="form-label" for="damageCost">Damage Cost(Rs)</label>
+                                            <input aria-label="Damage Cost" class="form-control" id="damageCost"
+                                                   name="damageCost"
+                                                   placeholder="LKR 10000.00"
+                                                   type="text">
+                                        </div>
+
+
+                                        <div class="mt-3 col-12 col-sm-6 col-md-3">
+                                            <label class="form-label" for="carAvailability">Availability</label>
+                                            <select aria-label="Default select example" class="form-select"
+                                                    id="carAvailability"
+                                                    name="carAvailability">
+                                                <option value="Available">Available</option>
+                                                <option value="NotAvailable">Not Available</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="mt-3 col-12 col-sm-6 col-md-3">
+                                            <label class="form-label" for="frontImage">Front Image</label>
+                                            <input class="form-control" id="frontImage" name="frontImage" type="file">
+                                        </div>
+
+                                        <div class="mt-3 col-12 col-sm-6 col-md-3">
+                                            <label class="form-label" for="sideImage">Side Image</label>
+                                            <input class="form-control" id="sideImage" name="sideImage" type="file">
+                                        </div>
+
+                                        <div class="mt-3 col-12 col-sm-6 col-md-3">
+                                            <label class="form-label" for="backImage">Back Image</label>
+                                            <input class="form-control" id="backImage" name="backImage" type="file">
+                                        </div>
+
+                                        <div class="mt-3 col-12 col-sm-6 col-md-3">
+                                            <label class="form-label" for="interiorImage">Interior Image</label>
+                                            <input class="form-control" id="interiorImage" name="interiorImage"
+                                                   type="file">
+                                        </div>
+
+                                        <div class="mt-3  gap-4 col d-flex justify-content-center">
+                                            <button class="col-md-2 btn btn-primary mt-3" id="btnSaveCar"
+                                                    type="button">
+                                                Save
+                                            </button>
+
+                                            <button class="col-md-2 btn btn-warning mt-3" id="btnUpdateCar"
+                                                    type="button">
+                                                Update
+                                            </button>
+
+                                            <button class="col-md-2 btn btn-danger mt-3" id="btnDeleteCar"
+                                                    type="button">
+                                                Delete
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+
+                    <div class="mt-5 card rentCard1 shadow border-0" style="height: 500px">
+                        <div class="card-body">
+                            <table class="table table-striped mt-1 table table-bordered table-hover text-center" style="width: 100%">
+                                <thead class="bg-primary text-white">
+                                <tr>
+                                    <th>Register No</th>
+                                    <th>Brand</th>
+                                    <th>Type</th>
+                                    <th>Color</th>
+                                    <th>Fuel Type</th>
+                                    <th>Transmission</th>
+                                    <th>Passengers</th>
+                                    <th>Meter Value</th>
+                                    <th>Daily Rate(Km)</th>
+                                    <th>Monthly Rate(Km)</th>
+                                    <th>Daily Rate(Rs)</th>
+                                    <th>Monthly Rate(Rs)</th>
+                                    <th>Free Day(Km)</th>
+                                    <th>Free Month(Km)</th>
+                                    <th>Extra Km(Rs)</th>
+                                    <th>Damage Cost(Rs)</th>
+                                    <th>Availability</th>
+                                </tr>
+                                </thead>
+                                <tbody id="tblCars">
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </section>
 
                 <!-----------------------Dashboard-------------------------------->
