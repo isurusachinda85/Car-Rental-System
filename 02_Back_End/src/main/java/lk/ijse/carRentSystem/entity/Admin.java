@@ -3,30 +3,27 @@ package lk.ijse.carRentSystem.entity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
 
+
+@Entity
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-@Entity
-public class Customer {
-
+@ToString
+public class Admin {
     @Id
-    private String cusNic;
-
-    private String cusName;
-    private String cusEmail;
-    private String cusAddress;
-    private String cusLicense;
-    private String contactNo;
-    private String cusUsername;
-    private String cusPassword;
-    private String cusComPassword;
+    private String nic;
+    private String name;
+    private String license;
+    private String address;
+    private String contact;
+    private String email;
     @OneToOne(cascade = CascadeType.ALL)
     private User user;
-    private String roleType;
 }

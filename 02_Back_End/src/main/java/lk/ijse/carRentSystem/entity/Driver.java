@@ -4,8 +4,10 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -25,6 +27,8 @@ public class Driver {
     private String driPassword;
     private String drComPassword;
     private String drRoleType;
+    @OneToOne(cascade = CascadeType.ALL)
+    private User user;
     private String drLicenseImage;
     private String driNicImage;
 
