@@ -1,4 +1,4 @@
-let BASE_URL = "http://localhost:8080/carRentalSystem/";
+let BASE_URL = "http://localhost:8080/carRentBackEnd_war/";
 
 $("#btnSaveCustomer").click(function () {
     let formData = $("#customerForm").serializeArray();
@@ -10,6 +10,7 @@ $("#btnSaveCustomer").click(function () {
         dataType: "json",
         success: function (res) {
             alert(res.message);
+            window.open("LoginForm.html","_self")
         },
         error: function (error) {
             alert(JSON.parse(error.responseText).message);

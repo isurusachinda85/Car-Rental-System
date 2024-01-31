@@ -26,6 +26,9 @@ public class Customer {
     private String cusUsername;
     private String cusPassword;
     private String cusComPassword;
+    private String nicImg;
+    private String licenseImg;
+
     @OneToOne(cascade = CascadeType.ALL)
     private User user;
     private String roleType;

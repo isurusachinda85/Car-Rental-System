@@ -1,9 +1,12 @@
 /*---------------------------Home Page--------------------------*/
 
 .nav-link:hover {
-    color: #0b5ed7;
+    color: #ffffff;
 }
 
+.item:hover{
+    color: #0a53be;
+}
 
 .nav-link {
     display: inline-block;
@@ -49,6 +52,9 @@
 
 #login:hover {
     background-color: white;
+    color: #0940a0;
+}
+#login>a:hover {
     color: #0940a0;
 }
 

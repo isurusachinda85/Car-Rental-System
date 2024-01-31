@@ -1,18 +1,26 @@
 package lk.ijse.carRentSystem.controllers;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import lk.ijse.carRentSystem.dto.CustomerDTO;
+import lk.ijse.carRentSystem.service.CustomerService;
+import lk.ijse.carRentSystem.util.ResponseUtil;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/customer")
+@CrossOrigin
+@Transactional
 public class CustomerControllers {
-    public CustomerControllers() {
-        System.out.println("Customer");
-    }
 
-    @GetMapping
-    public String saveCustomer(){
-        return "save";
+    @Autowired
+    private CustomerService service;
+
+    @ResponseStatus(HttpStatus.CREATED)
+    @PostMapping
+    public ResponseUtil saveCustomer(CustomerDTO dto) {
+        service.saveCustomer(dto);
+        return new ResponseUtil("Ok", "Save Customer", dto);
     }
 }
